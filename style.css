@@ -32,6 +32,7 @@
     padding: 15px;
     font-size: 20px;
     cursor: pointer;
+    margin: 20px 0;
   }
 
   .game-wrapper {
@@ -95,4 +96,8 @@
 
   .blue-dot {
     background-color: blue;
+  }
+
+  .difficulty-toggle {
+    background-color: rgb(186, 94, 94);
   }
