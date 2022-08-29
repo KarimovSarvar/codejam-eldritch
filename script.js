@@ -12,6 +12,7 @@ const secondBlue = document.querySelector('.second-stage-blue');
 const thirdBlue = document.querySelector('.third-stage-blue');
 const thirdBrown = document.querySelector('.third-stage-brown');
 const thirdGreen = document.querySelector('.third-stage-green');
+
 const blueCards = blue;
 const brownCards = brown;
 const greenCards = green;
@@ -41,16 +42,14 @@ const game = [
 
 let index = 0;
 
-
-
 function showCard() {
     let currentCard;
     currentCard = game[index].pop();
     if (game[index] && game[index].length === 0) {
-        index += 1
+        index += 1;
     }
 
-   thisCard.style.backgroundImage = `url(${currentCard.cardFace})`
+   thisCard.style.backgroundImage = `url(${currentCard.cardFace})`;
 
     let firstStageBrown = game[0].filter((obj) => obj.color === "brown");
     let firstStageGreen = game[0].filter((obj) => obj.color === "green");
@@ -73,10 +72,12 @@ function showCard() {
     thirdGreen.textContent = `${thirdStageGreen.length}`;
 
     if (game[0].length === 0 && game[1].length === 0 && game[2].length === 0) {
-        document.querySelector('.mythic-card').remove()
+        document.querySelector('.mythic-card').remove();
     }
+
+    console.log(game);
 }
 
-card.addEventListener('click', showCard)
+card.addEventListener('click', showCard);
 
     

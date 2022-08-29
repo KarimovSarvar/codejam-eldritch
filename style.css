@@ -45,14 +45,14 @@
   }
 
   .click-card {
-    max-width: 180px;
-    height: 260px;
-    margin: 0 0 20px 0;
+    max-width: 130px;
+    height: 220px;
+    margin: 0 0 10px 0;
   }
 
   .current-card {
-    width: 180px;
-    height: 264px;
+    width: 150px;
+    height: 240px;
     background: center/cover;
   }
 
@@ -61,6 +61,7 @@
     height: 240px;
     display: flex;
     flex-direction: column;
+    margin: 20px 0 0 0;
   }
 
   .stages__wrapper {
